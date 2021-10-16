@@ -9,7 +9,12 @@ const Header = () => {
         <div className="logo">Movie App</div>
       </Link>
       <div className="user-image">
-        <img src={} alt="user" />
+        <img
+          src={
+            'https://raw.githubusercontent.com/dmalvia/React_Redux_ToolKit_Movie_App/master/src/images/user.png'
+          }
+          alt="user"
+        />
       </div>
     </div>
   );
