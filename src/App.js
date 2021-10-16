@@ -9,17 +9,17 @@ import MovieDetail from './components/MovieDetail/MovieDetail';
 function App() {
   return (
     <div className="app">
-      <Header></Header>
       <BrowserRouter>
         <div className="container">
+          <Header></Header>
           <Switch>
             <Route exact path="/" exact component={Home} />
             <Route path="/movie/:imdbID" component={MovieDetail} />
             <Route component={PageNotFound} />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }
